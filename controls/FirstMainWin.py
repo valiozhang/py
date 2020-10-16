@@ -1,5 +1,6 @@
 import sys
-from PyQt5.QtWidgets import QMainWindow,QApplication #从PyQt5.QtWidgets包里导入，QMainWindow和QApplication是必须写的，以任何形式创建应用都要写QApp...
+#从PyQt5.QtWidgets包里导入，QMainWindow和QApplication是必须写的
+from PyQt5.QtWidgets import QMainWindow,QApplication
 from PyQt5.QtGui import QIcon #QIcon添加图标
 
 #编写和所有UI有关的类
