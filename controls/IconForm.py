@@ -3,8 +3,13 @@ import sys
 from PyQt5.QtWidgets import QMainWindow,QApplication
 from PyQt5.QtGui import QIcon #QIcon添加图标
 """
+当窗口在windows中运行时，也会在工具栏具有一个图标，
+如果希望能够在工具栏也显示对应的图标，需要调用系统函数，告诉系统需要显示图标：
+"""
+import ctypes
+ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("myappid")
+"""
 窗口的setWindowIcon方法用于设置窗口的图标，只在windows中可用。
-
 QApplication中的setWindowIcon用于设置主窗口图标和应用程序图标，但如果调用了窗口的setWindowIcon方法，
 QApplication中的setWindowIcon方法就只能用于设置应用程序图标
 """
