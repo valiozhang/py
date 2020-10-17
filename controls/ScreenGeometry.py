@@ -10,8 +10,8 @@ def onClick_Button():
     print("widget.height() = %d" % widget.height()) #240 （工作区域高度）
 
     print("方法二")  #通过坐标系
-    print("widget.geometry().x() = %d" % widget.geometry().x()) #251 （工作区域（不包含标题栏）左上角横坐标）
-    print("widget.geometry().y() = %d" % widget.geometry().y()) #252 （工作区域（不包含标题栏）左上角纵坐标）
+    print("widget.geometry().x() = %d" % widget.geometry().x()) #251 （工作区域（不包含标题栏和边框）左上角横坐标）
+    print("widget.geometry().y() = %d" % widget.geometry().y()) #252 （工作区域（不包含标题栏和边框）左上角纵坐标）
     print("widget.geometry().width() = %d" % widget.geometry().width()) #300 (工作区域宽度)
     print("widget.geometry().height() = %d" % widget.geometry().height()) #240 （工作区域高度）
 
